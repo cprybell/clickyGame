@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "name": "Always Sunny in Philadelphia",
+      "image":
+        "/images/rockers.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Avatar the Last Airbender",
+      "image":
+        "/images/avatar.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Dexter's Laboratory",
+      "image":
+        "/images/dexter-laboratory.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Drake and Josh",
+        "image":
+          "/images/Drake and Josh.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Fairyly Odd Parents",
+        "image":
+          "/images/fairly-odd-parents.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Family Guy",
+        "image":
+          "/images/family-guy.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Homer Simpson",
+        "image":
+          "/images/homer-simpson.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Rick and Morty",
+        "image":
+          "/images/rick-morty.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Spongebob",
+        "image":
+          "/images/spongebob.jpg"
+      }
+  ]
