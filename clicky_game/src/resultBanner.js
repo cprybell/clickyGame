@@ -17,9 +17,14 @@ function correctAnswer(correct) {
             <h4>You Got It Correct!</h4>
         )
     }
-    else {
+    else if (!correct){
         return (
             <h4>You already guessed that! Try Again!</h4>
+        )
+    }
+    else {
+        return (
+            <h4>Begin</h4>
         )
     }
 }
