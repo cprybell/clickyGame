@@ -6,25 +6,25 @@ import React from "react";
 function ResultBanner(props) {
 
     return (
-        correctAnswer(props.correct)
+        correctAnswer(props.correct, props.initial)
     );
 }
 
 
-function correctAnswer(correct) {
-    if (correct) {
+function correctAnswer(correct, initial) {
+    if (initial) {
+        return (
+            <h4>Click a photo to begin</h4>
+        )
+    }
+    else if (correct) {
         return (
             <h4>You Got It Correct!</h4>
         )
     }
-    else if (!correct){
-        return (
-            <h4>You already guessed that! Try Again!</h4>
-        )
-    }
     else {
         return (
-            <h4>Begin</h4>
+            <h4>You already guessed that! Try Again!</h4>
         )
     }
 }

@@ -9,7 +9,8 @@ class App extends React.Component {
     currentScore: 0,
     highScore: 0,
     clickedImages: [],
-    correct : null
+    correct : null,
+    initial : true
   };
 
   imageClick = (imageId) => {
@@ -19,26 +20,25 @@ class App extends React.Component {
       this.setState( {
         clickedImages : tempArr,
         currentScore : this.state.currentScore + 1,
-        correct : true
+        correct : true,
+        initial : false
       } );
-      console.log("current Array: " + this.state.clickedImages);
-      console.log("Current Score: " + this.state.currentScore);
     }
     else {
       this.setState( {
         clickedImages : [],
         highScore : this.state.highScore < this.state.currentScore ? this.state.currentScore : this.state.highScore,
         currentScore : 0,
-        correct : false
+        correct : false,
+        initial : false
       })
-      console.log("High Score: " + this.state.highScore)
     }
   };
 
   render() { 
     return (
       <div className="main">
-        <NavBar correct={this.state.correct} highScore={this.state.highScore} currentScore={this.state.currentScore}/>
+        <NavBar correct={this.state.correct} highScore={this.state.highScore} currentScore={this.state.currentScore} initial={this.state.initial}/>
         <JumboTron/>
         <div className="container">
           <GameBoard imgClick={this.imageClick}/>

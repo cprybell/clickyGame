@@ -12,6 +12,7 @@ function NavBar(props) {
             <a className="navbar-brand" href="#">Clicky Game!</a>
             <ResultBanner
                 correct={props.correct}
+                initial={props.initial}
             />
             <Score
                 currentScore={props.currentScore}
