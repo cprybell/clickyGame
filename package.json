@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/cprybell/clickyGame/issues"
   },
-  "homepage": "https://github.com/cprybell/clickyGame#readme"
+  "homepage": "https://github.com/cprybell/clickyGame#readme",
+  "dependencies": {
+    "react": "^16.12.0"
+  }
 }
