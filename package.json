@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "clicky_game/react-scripts start",
-    "build": "clicky_game/react-scripts build",
-    "test": "clicky_game/react-scripts test",
-    "eject": "clicky_game/react-scripts eject"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,8 @@
   },
   "homepage": "https://github.com/cprybell/clickyGame#readme",
   "dependencies": {
-    "react": "^16.12.0"
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0"
   }
 }
